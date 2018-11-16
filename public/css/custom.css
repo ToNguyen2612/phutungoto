@@ -1,0 +1,14 @@
+.admin-account{
+    padding-top: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.admin-account a{
+    color: white;
+}
+
+
+.admin-account a:hover{
+    text-decoration: underline;
+}
