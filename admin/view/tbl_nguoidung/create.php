@@ -6,8 +6,8 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Quản lý Hãng Xe
-                <small>Thêm mới Hãng Xe</small>
+                Quản lý Người dùng
+                <small>Thêm mới Người dùng</small>
             </h1>
         </section>
 
@@ -18,9 +18,9 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
 
                 <table class="table table-bordered">
                     <tr>
-                        <td>Tên hãng xe</td>
+                        <td>Họ và tên </td>
                         <td>
-                            <input type="text" name="txt_ten" class="form-control" required>
+                            <input type="text" name="txt_hoten" class="form-control" required>
                             <div id="error" style="margin-bottom: 10px;color: red;font-style: italic;">
                                 <?php
                                 if(count($errors) >0 ){
@@ -32,18 +32,35 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
                         </td>
                     </tr>
                     <tr>
-                        <td>Logo</td>
+                        <td>Số điện thoại</td>
                         <td>
-                            <input type="file" name="image_logo">
+                            <input type="text" name="txt_sdt" class="form-control" required>
                         </td>
                     </tr>
                     <tr>
-                        <td>Nước sản xuất</td>
+                        <td>Email</td>
                         <td>
-                            <input type="text" name="txt_nuocsx" class="form-control" required>
+                            <input type="text" name="txt_email" class="form-control" required>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td>
+                            <input type="text" name="txt_diachi" class="form-control" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tên đăng nhập</td>
+                        <td>
+                            <input type="text" name="txt_tendn" class="form-control" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu</td>
+                        <td>
+                            <input type="text" name="txt_matkhau" class="form-control" required>
+                        </td>
+                    </tr>
                     <tr>
                         <td colspan="2">
                             <input class="btn btn-primary" type="submit" name="btn_submit" value="Thêm mới">

@@ -6,8 +6,8 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Quản lý Hãng Xe
-                <small>Thêm mới Hãng Xe</small>
+                Quản lý Xuất xứ
+                <small>Thêm mới Xuất xứ</small>
             </h1>
         </section>
 
@@ -18,9 +18,9 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
 
                 <table class="table table-bordered">
                     <tr>
-                        <td>Tên hãng xe</td>
+                        <td>Quốc gia</td>
                         <td>
-                            <input type="text" name="txt_ten" class="form-control" required>
+                            <input type="text" name="txt_quocgia" class="form-control" required>
                             <div id="error" style="margin-bottom: 10px;color: red;font-style: italic;">
                                 <?php
                                 if(count($errors) >0 ){
@@ -31,19 +31,6 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Logo</td>
-                        <td>
-                            <input type="file" name="image_logo">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nước sản xuất</td>
-                        <td>
-                            <input type="text" name="txt_nuocsx" class="form-control" required>
-                        </td>
-                    </tr>
-
                     <tr>
                         <td colspan="2">
                             <input class="btn btn-primary" type="submit" name="btn_submit" value="Thêm mới">

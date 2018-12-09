@@ -27,12 +27,7 @@ class Hangxe_Controller extends Controller{
                     array_push($errors,"Hãng xe đã tồn tại <br>");
                 }else{
                     $hangxe->insert($this->table,$record);
-                    ?>
-                    <script type="text/javascript">
-                        alert("Thêm mới hãng xe thành công!!");
-                        window.location.href = 'index.php?c=hangxe&a=index';
-                    </script>
-                    <?php
+                    header('Location: index.php?c=hangxe&a=index');
                 }
 
         }

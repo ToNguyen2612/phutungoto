@@ -7,7 +7,7 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
         <section class="content-header">
             <h1>
                 Quản lý Dòng xe
-                <small>Danh sách Dòng Xe</small>
+                <small>Cập nhật Dòng Xe</small>
             </h1>
         </section>
 

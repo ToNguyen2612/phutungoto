@@ -47,7 +47,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="#" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>Quản lý</b></span>
             <!-- logo for regular state and mobile devices -->
@@ -82,6 +82,50 @@
                 <li class="active">
                     <a href="index.php?c=dongxe&a=index">
                         <i class="fa fa-dashboard"></i> <span>Quản lý Dòng xe</span>
+                    </a>
+                </li> <li class="active">
+                    <a href="index.php?c=phutung&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Phụ tùng</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=xuatxu&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Xuất xứ</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=nguoidung&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Người dùng</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=nguoidungcapcao&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Người dùng cấp cao</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=nhomnguoidung&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Nhóm người dùng</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=dsquyen&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Danh sách quyền</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=chitiet&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Chi tiết</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=chitiethoadon&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Chi tiết hóa đơn</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="index.php?c=hoadon&a=index">
+                        <i class="fa fa-dashboard"></i> <span>Quản lý Hóa đơn</span>
                     </a>
                 </li>
             </ul>

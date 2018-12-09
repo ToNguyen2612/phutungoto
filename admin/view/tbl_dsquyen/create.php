@@ -6,8 +6,8 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Quản lý Dòng xe
-                <small>Thêm mới Dòng Xe</small>
+                Quản lý Danh sách quyền
+                <small>Thêm mới Danh sách quyền</small>
             </h1>
         </section>
 
@@ -18,11 +18,26 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
 
                 <table class="table table-bordered">
                     <tr>
-                        <td>Tên dòng xe</td>
+                        <td>Menu bị tác động</td>
                         <td>
-                            <input type="text" name="txt_ten" class="form-control" required>
+                            <select name="sl_menu" class="form-control" >
+                                <option value="Hãng xe">Hãng xe</option>
+                                <option value="Dòng xe">Dòng xe</option>
+                                <option value="Danh sách quyền">Danh sách quyền</option>
+                                <option value="Hóa đơn">Hóa đơn</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kiểu quyền</td>
+                        <td>
+                            <input type="checkbox" name="kieuquyen[]" value="Thêm">Thêm
+                            <input type="checkbox" name="kieuquyen[]" value="Xem"> Xem
+                            <input type="checkbox" name="kieuquyen[]" value="Sửa"> Sửa
+                            <input type="checkbox" name="kieuquyen[]" value="Xóa"> Xóa
                             <div id="error" style="margin-bottom: 10px;color: red;font-style: italic;">
                                 <?php
+var_dump($errors);die;
                                 if(count($errors) >0 ){
                                     foreach ($errors as $error)
                                         echo $error;
@@ -32,23 +47,16 @@ require_once PATH_APPLICATION . '/view/partials/head.php';
                         </td>
                     </tr>
                     <tr>
-                        <td>Thuộc hãng xe</td>
+                        <td>Tên nhóm sử dụng quyền</td>
                         <td>
-                            <select name="sl_hangxe" class="form-control">
-                                <option value="">Chọn hãng xe</option>
-                                <?php foreach($hx as $hangxe): ?>
-                                    <option value="<?=$hangxe['id']?>"><?=$hangxe['ten']?></option>
+                            <select name="sl_nhomsdq" class="form-control" >
+                                <option value="">---Chọn nhóm sử dụng quyền---</option>
+                                <?php foreach($nhomnds as $nhomnd): ?>
+                                    <option value="<?=$nhomnd['id_nhomnd']?>"><?=$nhomnd['ten']?></option>
                                 <?php endforeach; ?>
                             </select>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Năm sản xuất</td>
-                        <td>
-                            <input type="text" name="txt_namsx" class="form-control" required>
-                        </td>
-                    </tr>
-
                     <tr>
                         <td colspan="2">
                             <input class="btn btn-primary" type="submit" name="btn_submit" value="Thêm mới">

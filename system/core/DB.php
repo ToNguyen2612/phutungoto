@@ -115,7 +115,7 @@ class DB
         $str .= "'";
 
         $sql = "INSERT INTO `$table`($key) VALUES($str)";
-
+//        var_dump($sql);die;
         $query = mysqli_query($this->_conn, $sql);
         return $query;
 
@@ -149,6 +149,7 @@ class DB
             }
             $con = implode(",", $con);
             $sql = "UPDATE `$table` SET $con WHERE $conditions";;
+            var_dump($sql);die;
             $query = mysqli_query($this->_conn, $sql);
             return $query;
         }
@@ -181,9 +182,11 @@ class DB
     {
 
         $resultSet = mysqli_query($this->_conn, $sql);
+
         $result = [];
         while (true) {
             $row = mysqli_fetch_assoc($resultSet);
+
             if ($row == null) {
                 break;
             }
